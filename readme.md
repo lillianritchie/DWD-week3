@@ -1,5 +1,5 @@
 <!-- Every README should start with an H1 -->
-# Week 2 Swiss Poster Challenge - ReadMe
+# Week 3 Front End Basics
 <!-- A one sentence description of the project or assignment -->
 This is my third week's homework assignment for Dynamic Web Dev. 
 
