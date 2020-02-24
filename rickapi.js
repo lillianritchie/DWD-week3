@@ -65,7 +65,7 @@ request.onload = function() {
       //address content
       const addressBold = document.createElement('p');
       addressBold.setAttribute('class','address__bold');
-      addressBold.textContent = 'Planet of Origin: ';
+      addressBold.textContent = 'Planet of Origin';
       const addressPlanet = document.createElement('p');
       addressPlanet.setAttribute('class', 'address__planet');
       addressPlanet.textContent = character.location.name;
@@ -79,7 +79,7 @@ request.onload = function() {
       //species content
       const speciesBold = document.createElement('p');
       speciesBold.setAttribute('class', 'species__bold');
-      speciesBold.textContent = 'Species: '
+      speciesBold.textContent = 'Species'
       const speciesType = document.createElement('p');
       speciesType.setAttribute('class', 'species__type');
       speciesType.textContent = character.species;

@@ -7,19 +7,26 @@
 }
 
 html{
-    font-size:18px;
+    font-size:16px;
+    color: white;
 }
 body{
-    background: grey;
+    background-image: linear-gradient(grey, white);
     text-align:center;
-    margin: 4px;
+    margin: 4rem;
+    align: center;
+}
+
+h1{
+    font-size: 4rem;
+    color: black;
 }
 #root {
     max-width: 1200px;
     margin: 0 auto;
-    background: grey;
     display: flex;
     flex-direction: horizontal;
+    flex-wrap: wrap;
   }
   
   .container {
@@ -30,34 +37,44 @@ body{
   /* each card container*/
   .card {
     margin: 1rem;
-    border: 1px solid black;
-    width: 20rem;
-    background: black;
+    padding: 1rem 0rem 1rem 0rem;
+    border: 3px solid black;
+    background: #262525;
     text-align: center;
     align: center;
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+  }
+
+  .card:hover{
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
   }
   /*character names*/
   .contact{
-    background:white;
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
 
   }
   /*character avatars*/
   .picture{
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       margin: 2%;
-      
+      border-radius: 30px;
+      margin-top: 1rem;
+      border: 3px solid black;
   }
 
   /*address content */
   .address{
-      display:flex;
-      flex-direction: horizontal;
-      background: white;
+    
   }
   .address__bold{
-     
       font-weight: bold;
+      font-size: 1.2rem;
   }
   .address__planet{
     
@@ -65,15 +82,15 @@ body{
 
   /*species content*/
   .species{
-      display:flex;
-      flex-direction: horizontal;
-      background: white;
+    
+      
   }
   .species__bold{
       font-weight: bold;
-      
+      font-size: 1.2rem;
   }
   .species__type{
+      margin-bottom: 1rem;
 
   }
   
