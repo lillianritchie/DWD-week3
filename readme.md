@@ -98,7 +98,7 @@ This is README template is licensed according to [Attribution 4.0 International 
 
 * I struggled with text alignment and font - how can I bold just part of a line of text?
 
-* Initially, I wanted to change the entire background of the card to green or red depending on the results, but I struggled to select just one card.
+* I wanted to make the card turn black when clicked before changing background colors, but I couldn't figure it out.
 
 <!-- Any questions you have -->
 ## Questions

@@ -21,6 +21,9 @@ h1{
     font-size: 3.5rem;
     color: black;
 }
+button{
+    outline:none;
+}
 #root {
     max-width: 1200px;
     margin: 0 auto;

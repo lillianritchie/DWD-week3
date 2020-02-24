@@ -96,13 +96,27 @@ request.onload = function() {
 
       card.addEventListener('click', (evt) =>{
         console.log('clicked!');
+
+        //remove character details
+        address.remove();
+        speciesStatus.remove();
+        //life status
+        const life = document.createElement('h2');
+        life.setAttribute('class', 'life');
+        life.textContent = character.status;
+        card.appendChild(life);
+        
+
         if (character.status == "Alive"){
-          card.style.color = "green";
+          card.style.background = "#1ff502";
+          
           console.log('alive');
         } else if (character.status== "Dead") {
           console.log('dead');
+          card.style.background = "#f50243";
         } else {
           console.log('¯\_(ツ)_/¯')
+          card.style.background = "linear-gradient(green, yellow, #f50243)";
         }
       })
     })
