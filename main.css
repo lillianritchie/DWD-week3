@@ -18,7 +18,7 @@ body{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: black;
 }
 #root {
@@ -42,16 +42,17 @@ h1{
     background: #262525;
     text-align: center;
     align: center;
-    box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+    box-shadow: 2px 4px 25px rgba(0, 0, 0, .35);
     border-radius: 12px;
     overflow: hidden;
     transition: all .2s linear;
   }
 
   .card:hover{
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .45);
     transform: translate3D(0, -2px, 0);
   }
+  
   /*character names*/
   .contact{
     font-size: 2rem;

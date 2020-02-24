@@ -42,9 +42,9 @@ request.onload = function() {
 
     data.forEach(character => {
 
-      console.log(`name ${character.name}, species: ${character.species}`)
+      //console.log(`name ${character.name}, species: ${character.species}`)
       //create a contact card with class
-      const card = document.createElement('div'); 
+      const card = document.createElement('button'); 
       card.setAttribute('class','card');
       root.appendChild(card);
 
@@ -93,8 +93,20 @@ request.onload = function() {
       card.appendChild(contact);
       card.appendChild(address);
       card.appendChild(speciesStatus);
-      
+
+      card.addEventListener('click', (evt) =>{
+        console.log('clicked!');
+        if (character.status == "Alive"){
+          card.style.color = "green";
+          console.log('alive');
+        } else if (character.status== "Dead") {
+          console.log('dead');
+        } else {
+          console.log('¯\_(ツ)_/¯')
+        }
+      })
     })
+
   } else {
     console.log('error')
     const errorMessage = document.createElement('marquee')
