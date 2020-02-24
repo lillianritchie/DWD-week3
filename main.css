@@ -1,3 +1,4 @@
+/* Styles for the page overall */
 *{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -6,12 +7,19 @@
 }
 
 html{
-    font-size:16px;
+    font-size:18px;
 }
-
+body{
+    background: grey;
+    text-align:center;
+    margin: 4px;
+}
 #root {
     max-width: 1200px;
     margin: 0 auto;
+    background: grey;
+    display: flex;
+    flex-direction: horizontal;
   }
   
   .container {
@@ -19,30 +27,54 @@ html{
     flex-wrap: wrap;
   }
   
+  /* each card container*/
   .card {
     margin: 1rem;
-    border: 1px solid gray;
+    border: 1px solid black;
+    width: 20rem;
+    background: black;
+    text-align: center;
+    align: center;
   }
-
+  /*character names*/
   .contact{
-    background: grey;
-  }
+    background:white;
 
+  }
+  /*character avatars*/
   .picture{
       width: 200px;
       height: 200px;
+      margin: 2%;
+      
   }
+
+  /*address content */
   .address{
       display:flex;
       flex-direction: horizontal;
+      background: white;
   }
-
   .address__bold{
-      text-align: left;
+     
+      font-weight: bold;
+  }
+  .address__planet{
+    
   }
 
-  .address__planet{
-      text-align: right;
+  /*species content*/
+  .species{
+      display:flex;
+      flex-direction: horizontal;
+      background: white;
+  }
+  .species__bold{
+      font-weight: bold;
+      
+  }
+  .species__type{
+
   }
   
   @media screen and (min-width: 600px) {

@@ -89,8 +89,8 @@ request.onload = function() {
 
 
       //print the names and contact info
-      card.appendChild(contact);
       card.appendChild(picture);
+      card.appendChild(contact);
       card.appendChild(address);
       card.appendChild(speciesStatus);
       
