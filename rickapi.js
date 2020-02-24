@@ -41,6 +41,8 @@ request.onload = function() {
   if (request.status >= 200 && request.status < 400) {
 
     data.forEach(character => {
+
+      console.log(`name ${character.name}, species: ${character.species}`)
       //create a contact card with class
       const card = document.createElement('div'); 
       card.setAttribute('class','card');
@@ -56,7 +58,6 @@ request.onload = function() {
       picture.setAttribute('class','picture');
       picture.setAttribute('src', character.image);
 
-      //create contact location
       
       //section to hold address
       const address = document.createElement('section');
@@ -64,22 +65,34 @@ request.onload = function() {
       //address content
       const addressBold = document.createElement('p');
       addressBold.setAttribute('class','address__bold');
-      addressBold.textContent = 'Address: ';
+      addressBold.textContent = 'Planet of Origin: ';
       const addressPlanet = document.createElement('p');
       addressPlanet.setAttribute('class', 'address__planet');
-      address.textContent = character.location.name;
+      addressPlanet.textContent = character.location.name;
       //add elements to section
       address.appendChild(addressBold);
       address.appendChild(addressPlanet);
      
-      
-      //create contact phone
-      const phone = document.create
+      //section to hold species
+      const speciesStatus = document.createElement('section');
+      speciesStatus.setAttribute('class','species');
+      //species content
+      const speciesBold = document.createElement('p');
+      speciesBold.setAttribute('class', 'species__bold');
+      speciesBold.textContent = 'Species: '
+      const speciesType = document.createElement('p');
+      speciesType.setAttribute('class', 'species__type');
+      speciesType.textContent = character.species;
+      //display content
+      speciesStatus.appendChild(speciesBold);
+      speciesStatus.appendChild(speciesType);
+
 
       //print the names and contact info
       card.appendChild(contact);
       card.appendChild(picture);
       card.appendChild(address);
+      card.appendChild(speciesStatus);
       
     })
   } else {
